@@ -1,0 +1,8 @@
+node_modules/
+.next/
+apps/web/strapi-dist/
+apps/web/strapi/.tmp/
+apps/web/strapi/cache/
+*.env
+.env.*
+.pnpm-debug.log
