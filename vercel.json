@@ -1,5 +1,4 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "projects": {},
   "ignoreCommand": "echo 'root deploy ignored'"
 }
