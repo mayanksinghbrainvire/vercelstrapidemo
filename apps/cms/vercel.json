@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "apps/cms/package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": []
+}
+    
