@@ -3,7 +3,10 @@
   "builds": [
     {
       "src": "apps/cms/server.ts",
-      "use": "@vercel/node"
+      "use": "@vercel/node",
+      "config": {
+        "zeroConfig": false
+      }
     }
   ],
   "routes": [
