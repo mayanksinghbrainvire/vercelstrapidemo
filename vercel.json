@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "functions": {
-    "apps/cms/api/index.ts": {
-      "runtime": "nodejs18.x"
+  "builds": [
+    {
+      "src": "apps/cms/api/index.ts",
+      "use": "@vercel/node"
     }
-  },
+  ],
   "routes": [
     {
       "src": "/(.*)",
