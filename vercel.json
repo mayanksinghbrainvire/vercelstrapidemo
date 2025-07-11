@@ -1,18 +1,14 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "apps/cms/server.ts",
-      "use": "@vercel/node",
-      "config": {
-        "zeroConfig": false
-      }
+  "functions": {
+    "apps/cms/api/index.ts": {
+      "runtime": "nodejs22.x"
     }
-  ],
+  },
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "apps/cms/server.ts"
+      "dest": "apps/cms/api/index.ts"
     }
   ]
 }
