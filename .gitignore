@@ -6,3 +6,4 @@ apps/web/strapi/cache/
 *.env
 .env.*
 .pnpm-debug.log
+.vercel
