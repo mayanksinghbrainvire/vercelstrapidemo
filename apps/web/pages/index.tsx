@@ -4,7 +4,12 @@ export default function Home() {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/articles?populate=*`)
+    const apiUrl = process.env.NEXT_PUBLIC_STRAPI_URL;
+    if (!apiUrl) {
+      console.error("NEXT_PUBLIC_STRAPI_URL is not defined in environment variables.");
+      return;
+    }
+    fetch(`${apiUrl}/api/articles?populate=*`)
       .then(res => res.json())
       .then(json => setArticles(json.data || []))
       .catch(err => console.error(err));
